@@ -1,0 +1,34 @@
+{
+  "hash": "8ce66293",
+  "configHash": "b1aee924",
+  "lockfileHash": "3b182746",
+  "browserHash": "b00528ab",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "7c2f5800",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "dce116fe",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "078430cb",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-CRIPZOYN": {
+      "file": "chunk-CRIPZOYN.js"
+    },
+    "chunk-WZJTMI35": {
+      "file": "chunk-WZJTMI35.js"
+    }
+  }
+}
