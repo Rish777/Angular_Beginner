@@ -1,0 +1,123 @@
+/* main.component.css */
+.main-container {
+    height: 100vh;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+  
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  mat-nav-list {
+    padding: 0;
+  }
+  
+  mat-list-item {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  mat-list-item:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-left: 4px solid #007bff;
+  }
+  
+  .grid-container {
+    margin: 20px;
+  }
+  
+  .image-button {
+    border: none;
+    background: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default shadow */
+    outline: purple;
+  }
+  
+  .category-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
+  }
+  
+  .category-label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .category-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Optional: zoom effect */
+  }
+  
+  .image-button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .category-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .mat-grid-tile:hover .category-image {
+    transform: scale(1.05); /* Optional: zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10); /* Shadow on hover */
+  }
+  
+  .mat-grid-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Optional: rounded corners for each tile */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition for box-shadow and border */
+     /* Adding outline (border) around the tile */
+  border: 2px solid #1976D2; /* Blue color, you can change it as needed *
+
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .category-image {
+      width: 100%; /* Full width */
+      height: 150px; /* Reduce height for mobile devices */
+    }
+  }  

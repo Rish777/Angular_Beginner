@@ -1,0 +1,70 @@
+/* login.component.css */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fafafa;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.form-group {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-label {
+  color: #333;
+}
+
+input[matInput] {
+  font-size: 16px;
+}
+
+/* Button Styles */
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mat-raised-button {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mat-raised-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #f0f8ff;
+  border-radius: 8px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-outline {
+  border-radius: 8px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-outline-thick {
+  border-width: 2px;
+  border-color: #007bff;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 8px 12px;
+}

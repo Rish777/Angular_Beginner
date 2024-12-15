@@ -1,0 +1,22 @@
+<!-- login.component.html -->
+<mat-card class="login-container">
+  <mat-card-header>
+    <mat-card-title class="title">Login</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form>
+      <mat-form-field appearance="fill" class="form-group">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" placeholder="Enter your username" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="form-group">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Enter your password" required />
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" class="btn" (click)="onLogin()">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
