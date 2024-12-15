@@ -3489,6 +3489,20 @@ function last2(predicate, defaultValue) {
   };
 }
 
+// node_modules/rxjs/dist/esm5/internal/operators/pairwise.js
+function pairwise() {
+  return operate(function(source, subscriber) {
+    var prev;
+    var hasPrev = false;
+    source.subscribe(createOperatorSubscriber(subscriber, function(value) {
+      var p = prev;
+      prev = value;
+      hasPrev && subscriber.next([p, value]);
+      hasPrev = true;
+    }));
+  });
+}
+
 // node_modules/rxjs/dist/esm5/internal/operators/scan.js
 function scan(accumulator, seed) {
   return operate(scanInternals(accumulator, seed, arguments.length >= 2, true));
@@ -24434,6 +24448,8 @@ export {
   ConnectableObservable,
   Subject,
   BehaviorSubject,
+  asapScheduler,
+  animationFrameScheduler,
   EMPTY,
   from,
   of,
@@ -24462,7 +24478,9 @@ export {
   first,
   takeLast,
   last2 as last,
+  pairwise,
   scan,
+  share,
   shareReplay,
   skip,
   startWith,
@@ -24965,4 +24983,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-QLDMSSI5.js.map
+//# sourceMappingURL=chunk-4HMOXI35.js.map

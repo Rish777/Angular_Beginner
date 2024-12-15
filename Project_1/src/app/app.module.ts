@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 // import { StudentListComponent } from './student-list/student-list.component';
 // import { CountryListComponent } from './country-list/country-list.component';
 import { LoginComponent } from './login/login.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Import Angular Material modules
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -20,6 +20,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -34,14 +35,17 @@ import { MatListModule } from '@angular/material/list';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideAnimationsAsync()

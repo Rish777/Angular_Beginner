@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,11 +10,16 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
-  onSubmit() {
-    if (this.email === 'admin@example.com' && this.password === 'password') {
-      alert('Login successful!');
-    } else {
-      alert('Invalid email or password.');
+    constructor(private router: Router) {}
+  
+    onLogin() {
+      // Example logic for successful login
+      const isLoginSuccessful = true;
+  
+      if (isLoginSuccessful) {
+        this.router.navigate(['/main']); // Navigate to the main page
+      } else {
+        alert('Login failed. Please try again.');
+      }
     }
   }
-}
