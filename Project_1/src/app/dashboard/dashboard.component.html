@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <span>Dashboard</span>
+    <span class="spacer"></span>
+    <button mat-icon-button>
+      <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <div class="dashboard-container">
+    <mat-sidenav-container>
+      <mat-sidenav mode="side" opened>
+        <mat-nav-list>
+          <mat-list-item routerLink="/dashboard">Home</mat-list-item>
+          <mat-list-item routerLink="/main">Main</mat-list-item>
+          <mat-list-item>Settings</mat-list-item>
+          <mat-list-item>Logout</mat-list-item>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div class="dashboard-content">
+          <h2>Welcome to the Dashboard</h2>
+          <p>Here is your dashboard content...</p>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  

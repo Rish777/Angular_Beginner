@@ -3,14 +3,14 @@
     <mat-sidenav #sidenav mode="side" opened>
       <mat-toolbar color="primary">Main Navigation</mat-toolbar>
       <mat-nav-list>
-        <mat-list-item (click)="navigateTo('dashboard')">
+        <mat-list-item (click)="goToDashboard()" routerLinkActive="active">
           <mat-icon>dashboard</mat-icon>
           <span>Dashboard</span>
         </mat-list-item>
-        <mat-list-item (click)="navigateTo('settings')">
+        <!-- <mat-list-item (click)="navigateTo('settings')">
           <mat-icon>settings</mat-icon>
           <span>Settings</span>
-        </mat-list-item>
+        </mat-list-item> -->
         <mat-list-item (click)="logout()">
           <mat-icon>logout</mat-icon>
           <span>Logout</span>
@@ -30,6 +30,22 @@
         <h2>Welcome, {{ username }}!</h2>
         <p>This is the main page of your application. Navigate through the menu to access other features.</p>
       </div>
+
+      <div class="grid-container">
+        <mat-grid-list [cols]="getCols()" rowHeight="1:1" gutterSize="10px">
+          <!-- Repeat this block for each category -->
+          <mat-grid-tile *ngFor="let category of categories" 
+          (mouseover)="shuffleImages(category)" 
+          (mouseout)="resetImage(category)"
+          (click)="onCategoryClick(category)">
+            <button mat-button class="image-button">
+              <img [src]="category.image" [alt]="category.name" class="category-image" />
+              <div class="category-label">{{ category.name }}</div>
+            </button>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
     </mat-sidenav-content>
   </mat-sidenav-container>
   
