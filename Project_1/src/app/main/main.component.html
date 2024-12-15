@@ -1,0 +1,35 @@
+<!-- main.component.html -->
+<mat-sidenav-container class="main-container">
+    <mat-sidenav #sidenav mode="side" opened>
+      <mat-toolbar color="primary">Main Navigation</mat-toolbar>
+      <mat-nav-list>
+        <mat-list-item (click)="navigateTo('dashboard')">
+          <mat-icon>dashboard</mat-icon>
+          <span>Dashboard</span>
+        </mat-list-item>
+        <mat-list-item (click)="navigateTo('settings')">
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </mat-list-item>
+        <mat-list-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>Logout</span>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Main Page</span>
+      </mat-toolbar>
+  
+      <div class="content">
+        <h2>Welcome, {{ username }}!</h2>
+        <p>This is the main page of your application. Navigate through the menu to access other features.</p>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

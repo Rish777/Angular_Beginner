@@ -1,0 +1,37 @@
+/* main.component.css */
+.main-container {
+    height: 100vh;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+  
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  mat-nav-list {
+    padding: 0;
+  }
+  
+  mat-list-item {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  mat-list-item:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-left: 4px solid #007bff;
+  }
+  

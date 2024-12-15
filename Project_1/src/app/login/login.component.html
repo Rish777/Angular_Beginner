@@ -1,15 +1,22 @@
-<div class="login-container">
-    <h2>Login</h2>
-    <form (submit)="onSubmit()">
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" [(ngModel)]="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" [(ngModel)]="password" name="password" required />
-      </div>
-      <button type="submit" class="btn">Login</button>
+<!-- login.component.html -->
+<mat-card class="login-container">
+  <mat-card-header>
+    <mat-card-title class="title">Login</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form>
+      <mat-form-field appearance="fill" class="form-group">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" placeholder="Enter your username" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="form-group">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Enter your password" required />
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" class="btn">Login</button>
     </form>
-  </div>
-  
+  </mat-card-content>
+</mat-card>
