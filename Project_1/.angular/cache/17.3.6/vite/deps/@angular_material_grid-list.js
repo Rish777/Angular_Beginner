@@ -5,7 +5,7 @@ import {
   MatLineModule,
   coerceNumberProperty,
   setLines
-} from "./chunk-QWH4GLOX.js";
+} from "./chunk-2FF7HICH.js";
 import "./chunk-PW34QYQV.js";
 import {
   ChangeDetectionStrategy,
